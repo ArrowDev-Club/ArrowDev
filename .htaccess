@@ -1,6 +1,0 @@
-RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://ardsrm.in/$1 [R=301,L]
-
-RewriteCond %{HTTP_HOST} !^ardsrm.in$ [NC]
-RewriteRule ^(.*)$ https://ardsrm.in/$1 [R=301,L]
