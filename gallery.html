@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css"/>
+        <title>ArrowDev | Gallery</title>
+        <link rel="icon" type="image/x-icon" href="assets/logo.ico">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="gallery.css">
+    </head>
+    <body>
+        <!-- Reuse navigation from main page -->
+        <table class="nav">
+            <tr>
+                <td class="logo_cont">
+                    <!-- <img src="assets/logo.png"> -->
+                    <a href="index.html">
+                        <img src="assets/logo.png"></a>
+                </td>
+                <td class="gap_cont"></td>
+                <td class="anc_cont">
+                    <div>
+                        
+                        <a href="gallery.html">Gallery</a>
+                        <a href="index.html#milestones">Milestones</a>
+                        <a href="index.html#initiatives">Initiatives</a>
+                        <a href="index.html#bod">Exec</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="gallery-container">
+            <!-- Gallery Header -->
+            <div class="gallery-header">
+                <h1>Our Journey in Pictures</h1>
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="events">Events</button>
+                    <button class="filter-btn" data-filter="study-groups">Study Groups</button>
+                    <button class="filter-btn" data-filter="hackathons">Hackathons</button>
+                    <!-- Add a new button -->
+                    <!-- <button class="filter-btn" data-filter="xyz">xyz</button> -->
+                </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+
+                <!--XYZ-->
+                <!-- <div class="gallery-item xyz" data-category="xyz">
+                    <div class="gallery-item-inner">
+                        <img src="https://placehold.co/600x400/222222/GOLD?text=XYZ+Event+1" alt="XYZ Event 1">
+                        <div class="gallery-item-content">
+                            <h3>XYZ Event Title</h3>
+                            <p>Description of XYZ event goes here</p>
+                        </div>
+                    </div>
+                </div> -->
+
+<!--- REFERENCE STRUCTURE FOR FUTURE
+
+                <div class="gallery-item events" data-category="events">
+                    <div class="gallery-item-inner">
+                        <img src="assets/website/inauguration pics/pic3.PNG" alt="inauguration">
+                        <div class="gallery-item-content">
+                            <h3>Inauguration</h3>
+                            <p>Club Inauguration by our Mr. Sundararajan G - Director Adept Labz</p>
+                        </div>
+                        <div class="gallery-item-extra" hidden>
+                            <img src="assets/website/inauguration pics/pic2.PNG" alt="Tech Talk 2023 - Session">
+                            <img src="assets/website/inauguration pics/pic1.PNG" alt="Tech Talk 2023 - Workshop">
+                            <p class="extra-details">
+                                The ArrowDev Club inauguration on September 3rd marked the beginning of an exciting journey for aspiring innovators and developers.
+                                <br><br>
+                                Key Highlights:
+                                <br>• AI and Machine Learning workshop
+                                <br>• Cloud Computing seminar
+                                <br>• Industry expert panel discussion
+                                <br>• Student project showcase
+                            </p>
+                            <div class="team-members">
+                                <h4>Chief Guest</h4>
+                                <ul>
+                                    <li>John Doe - Team Lead</li>
+                                    <li>Jane Smith - Developer</li>
+                                    <li>Mike Johnson - Designer</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                
+                <div class="gallery-item events" data-category="events">
+                    <div class="gallery-item-inner">
+                        <img src="assets/website/inauguration pics/pic3.PNG" alt="inauguration">
+                        <div class="gallery-item-content">
+                            <h3>Inauguration</h3>
+                            <p>Club Inauguration by our Mr. Sundararajan G - Director Adept Labz</p>
+                        </div>
+                        <!-- Hidden container for additional images -->
+                        <div class="gallery-item-extra" hidden>
+                            <img src="assets/website/inauguration pics/pic2.PNG" alt="Tech Talk 2023 - Session">
+                            <img src="assets/website/inauguration pics/pic1.PNG" alt="Tech Talk 2023 - Workshop">
+                            <p class="extra-details">
+                                The ArrowDev Club inauguration on September 3rd marked the beginning of an exciting journey for aspiring innovators and developers.
+                                
+                            </p>
+                            <div class="team-members">
+                                <h4>Chief Guest</h4>
+                                <ul>
+                                    <li>Mr. Sundararajan G - Director at Adept Labz, CEO at JavaScript Army                                  </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               
+
+
+
+                <!-- Study Groups -->
+                <div class="gallery-item study-groups" data-category="study-groups">
+                    <div class="gallery-item-inner">
+                        <img src="assets/website/Webdev sg pics/main pic.PNG" alt="web Mentoring">
+                        <div class="gallery-item-content">
+                            <h3>Web Development Study Group</h3>
+                            <p>Hands-on learning and mentoring in web development</p>
+                        </div>
+                        <div class="gallery-item-extra" hidden>
+                            <img src="assets/website/Webdev sg pics/pic1.PNG" alt="web Mentoring">
+                        <img src="assets/website/Webdev sg pics/pic2.jpg" alt="web Mentoring">
+                        <img src="assets/website/Webdev sg pics/pic3.PNG" alt="web Mentoring">
+                        <img src="assets/website/Webdev sg pics/pic4.PNG" alt="web Mentoring">
+                            <p class="extra-details">
+                                The SG sessions on web development provided hands-on learning in HTML, CSS, JavaScript, responsive design, and modern frameworks, empowering students to build dynamic, user-friendly websites with best practices and creativity.
+                
+                            </p>
+                            <div class="team-members">
+                                <h4>Mentors</h4>
+                                <ul>
+                                    <li>Vikraman SP</li>
+                                    <li>Vishwaa R</li>
+                                    <li>Akhilesh Shukla</li>
+                                    <li>M.A.Shriram</li>
+                                    <li>J.V.K.Hem</li>
+                                    <li>Netrnag</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <!-- Hackathons -->
+                <div class="gallery-item hackathons" data-category="hackathons">
+                    <div class="gallery-item-inner">
+                        <img src="assets/website/SIH pics/f8be655a-99f1-4ff0-bde6-c2254571fa7f.jpg" alt="CodeFest Winners">
+                        <div class="gallery-item-content">
+                            <h3>Smart India Hackathon'24</h3>
+                            <p>First place in SIH'24</p>
+                        </div>
+                        <div class="gallery-item-extra" hidden>
+                            <img src="assets/website/SIH pics/98ff60a1-2510-4c8c-bd5a-b97f6b6bf93a.jpg" alt="Tech Talk 2023 - Session">
+                            <img src="assets/website/SIH pics/05fa75c3-f427-4a79-88fe-d6b977d19043.jpg" alt="Tech Talk 2023 - Workshop">
+                            <img src="assets/website/SIH pics/IMG_7182.PNG" alt="Tech Talk 2023 - Workshop">
+                            <img src="assets/website/SIH pics/IMG_7183.JPG" alt="Tech Talk 2023 - Workshop">
+                            <p class="extra-details">
+                                SIH 2024 software category winners showcased innovation, teamwork, and technical excellence. <br><br>
+                            
+                                Position 1st <br>
+                                Location: Rajalakshmi Engineering College <br>
+                                Prize given: Rs. 1,00,000 <br>
+                                Date: 11th and 12th of December 
+                                <br><br>
+                                
+                            </p>
+                            <div class="team-members">
+                                <h4>Team Members from ArrowDev</h4>
+                                <ul>
+                                    <li>M.A.Shriram</li>
+                                    <li>J.V.K.Hem</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="gallery-item events" data-category="events">
+                    <div class="gallery-item-inner">
+                        <img src="assets/website/Codathon pics/main pic.PNG" alt="inauguration">
+                        <div class="gallery-item-content">
+                            <h3>Codathon</h3>
+                            <p>DSA problems in HackerRank for School Students </p>
+                        </div>
+                        <!-- Hidden container for additional images -->
+                        <div class="gallery-item-extra" hidden>
+                            <img src="assets/website/Codathon pics/pic2.jpg" alt="Tech Talk 2023 - Session">
+                            <img src="assets/website/Codathon pics/pic3.PNG" alt="Tech Talk 2023 - Workshop">
+                            <p class="extra-details">
+                                The Codathon for school students featured easy, medium, and hard DSA problems, fostering problem-solving skills, algorithmic thinking, and competitive coding enthusiasm.
+                            </p>
+                            <div class="team-members">
+                                <h4>Judges</h4>
+                                <ul>
+                                    <li>Dr. R Dayana</li>
+                                    <li>Dr. Neelam Sanjeev Kumar</li>
+                                    <li>Dr. S. K. B. Sangeetha</li>
+                                    
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item hackathons" data-category="hackathons">
+                    <div class="gallery-item-inner">
+                        <img src="assets/website/ImpactX/Group pic.jpg" alt="Hackathon 2024">
+                        <div class="gallery-item-content">
+                            <h3>ImpactX 2.0 - 24 hour hackathon</h3>
+                            <p>3rd position in ImpactX 2.0</p>
+                        </div>
+                        <div class="gallery-item-extra" hidden>
+                            
+                        <img src="assets/website/ImpactX/working.jpg" alt="Hackathon 2024">
+                        <img src="assets/website/ImpactX/big cheque.jpg" alt="Hackathon 2024">
+                            <!-- <img src="assets/website/hackforge pics/WhatsApp Image 2025-02-16 at 21.39.47_7a77a55e.jpg" alt="Tech Talk 2023 - Session"> -->
+                            <p class="extra-details">
+                                Position : 3rd <br>
+                                Location : St Josephs Institute of Technology <br>
+                                Prize : 3,000 <br>
+                                Date of Event :- 24th and 25th Jan 2025 <br>
+                                <br><br>
+                                
+                            </p>
+                            <div class="team-members">
+                                <h4>Team Members</h4>
+                                <ul>
+                                    <li>Vikraman SP - Team Lead</li>
+                                    <li>Prithika S - Team Member</li>
+                                    <li>Vishwaa R - Team Member</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item hackathons" data-category="hackathons">
+                    <div class="gallery-item-inner">
+                        <img src="assets/website/hackerz Thiruvizha/Pic.jpg" alt="Hackathon 2024">
+                        <div class="gallery-item-content">
+                            <h3>Hackerz Thiruvizha</h3>
+                            <p>1st place in Hackerz Thiruvizha</p>
+                        </div>
+                        <div class="gallery-item-extra" hidden>
+                            
+                        <img src="assets/website/hackerz Thiruvizha/Cheque.jpg" alt="Hackathon 2024">
+                            <!-- <img src="assets/website/hackforge pics/WhatsApp Image 2025-02-16 at 21.39.47_7a77a55e.jpg" alt="Tech Talk 2023 - Session"> -->
+                            <p class="extra-details">
+                                Position : 1st <br>
+                                Location : St Josephs Engineering College <br>
+                                Prize : Rs. 8,000 <br>
+                                Date of Event :- 24th and 25th Jan 2025
+                                <br><br>
+                                
+                            </p>
+                            <div class="team-members">
+                                <h4>Team Members</h4>
+                                <ul>
+                                    <li>Prithika S - Team Lead</li>
+                                    <li>Vikraman SP - Team Member</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item hackathons" data-category="hackathons">
+                    <div class="gallery-item-inner">
+                        <img src="assets/website/exadata pics/WhatsApp Image 2025-02-16 at 21.38.26_4469ffd5.jpg" alt="Tech Talk 2023 - Session">
+                            
+                        <div class="gallery-item-content">
+                            <h3>Exadathon</h3>
+                            <p>1st prize in Exadathon</p>
+                        </div>
+                        <div class="gallery-item-extra" hidden>
+                            <img src="assets/website/exadata pics/WhatsApp Image 2025-02-16 at 21.38.26_8577e5dc.jpg" alt="IoT Challenge">
+                        
+                            <p class="extra-details">
+                                
+                                Position : 1st <br>
+                                Prize given : Rs. 10,000  <br>
+                                Date of event:- 28th and 29th Aug 2024
+
+                                <br><br>
+                                Key Highlights:
+                                <br>• AI and Machine Learning workshop
+                                <br>• Cloud Computing seminar
+                                <br>• Industry expert panel discussion
+                                <br>• Student project showcase
+                            </p>
+                            <div class="team-members">
+                                <h4>Team Members from ArrowDev</h4>
+                                <ul>
+                                    <li>Sudarshan - Team Lead</li>
+                                    <li>Netrang</li>
+                                    <li>Neelesh</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item hackathons" data-category="hackathons">
+                    <div class="gallery-item-inner">
+                        <img src="assets/website/hackforge pics/WhatsApp Image 2025-02-16 at 21.39.47_72029f6d.jpg" alt="Hackathon 2024">
+                        <div class="gallery-item-content">
+                            <h3>HackForge'25</h3>
+                            <p>3rd position in HackForge'25</p>
+                        </div>
+                        <div class="gallery-item-extra" hidden>
+                            <img src="assets/website/hackforge pics/WhatsApp Image 2025-02-16 at 21.39.47_7a77a55e.jpg" alt="Tech Talk 2023 - Session">
+                            <p class="extra-details">
+                                Position : 3rd  <br>
+                                Location : SRMIST VDP <br>
+                                Prize : Rs. 5,000 <br>
+                                Date of Event :- 12th & 13th Feb 2025
+                                <br><br>
+                                
+                            </p>
+                            <div class="team-members">
+                                <h4>Team Members</h4>
+                                <ul>
+                                    <li>Vikraman SP - Team Lead</li>
+                                    <li>Prithika S - Team Member</li>
+                                    <li>Varun Vijaya Babu - Team Member</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        
+
+                <!-- More Study Groups -->
+                
+
+                <!-- More Hackathons -->
+                <div class="gallery-item hackathons" data-category="hackathons">
+                    <div class="gallery-item-inner">
+                        
+                        <img src="assets/website/Hack Horizon pics/IMG_7185.PNG" alt="Tech Talk 2023 - Session">
+                        
+                        <div class="gallery-item-content">
+                            <h3>Hack Horizon</h3>
+                            <p>1st prize in Hack Horizon</p>
+                        </div>
+                        <div class="gallery-item-extra" hidden>
+                            <img src="assets/website/Hack Horizon pics/IMG_7172.PNG" alt="IoT Challenge">
+                            <p class="extra-details">
+    
+                                
+                                Position : 1st  <br>
+                                Prize given :Rs. 4000 <br>
+                                Date of event:- 24th and 25th Oct 2024
+
+                                <br><br>
+                                
+                            </p>
+                            <div class="team-members">
+                                <h4>Team Members from ArrowDev</h4>
+                                <ul>
+                                    <li>Vikraman SP - Team Lead</li>
+                                    <li>Prathima</li>
+                                    <li>Prithika</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="gallery-item hackathons" data-category="hackathons">
+                    <div class="gallery-item-inner">
+                        <img src="assets/website/inventus pics/WhatsApp Image 2025-02-16 at 21.38.26_eecd6cd9.jpg" alt="IoT Challenge">
+                        <div class="gallery-item-content">
+                            <h3>Inventus</h3>
+                            <p>2nd price in Inventus</p>
+                        </div>
+                        <div class="gallery-item-extra" hidden>
+                            <p class="extra-details">
+                                
+                                Position : 2nd <br>
+                                Prize given : Rs. 500 <br>
+                                Date of event:- 26th and 27th Sept 2024 <br>
+
+
+                            </p>
+                            <div class="team-members">
+                                <h4>Team Members from ArrowDev</h4>
+                                <ul>
+                                    <li>Ramswaroop - Team Lead</li>
+                                    <li>Netrang</li>
+                                    <li>Sudarshan</li>
+                                    <li>Ankit</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="gallery-item hackathons" data-category="hackathons">
+                    <div class="gallery-item-inner">
+                        <img src="assets/website/Hack Horizon pics/IMG_7173.PNG" alt="IoT Challenge">
+                        <div class="gallery-item-content">
+                            <h3>Hack Horizon</h3>
+                            <p>3rd prize in Hack Horizon</p>
+                        </div>
+                        <div class="gallery-item-extra" hidden>
+                            <p class="extra-details">
+                                
+                                Position : 3rd <br>
+                                Prize given : Rs. 1,000 <br>
+                                Date of event:- 24th and 25th Oct 2024
+
+                                <br><br>
+                                
+                            </p>
+                            <div class="team-members">
+                                <h4>Team Members from ArrowDev</h4>
+                                <ul>
+                                    <li>Ramswaroop - Team Lead</li>
+                                    <li>Harsh</li>
+                                    <li>Netrang</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lightbox -->
+            <div class="lightbox">
+                <div class="lightbox-content">
+                    <button class="close-lightbox">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <button class="caption-toggle" title="Toggle Details">
+                        <i class="fas fa-chevron-up"></i>
+                    </button>
+                    <div class="lightbox-images">
+                        <!-- Images will be inserted here -->
+                    </div>
+                    <div class="lightbox-caption">
+                        <!-- Caption content will be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <center><a>&copy;Copyright 2024 HTML.am</a></center>
+        </footer>
+
+        <script src="gallery.js"></script>
+    </body>
+</html>

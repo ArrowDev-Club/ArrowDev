@@ -235,3 +235,19 @@
     
 
 })();
+
+
+
+/* Navonmesa Popup */
+
+document.addEventListener('DOMContentLoaded', () => {
+    const popup = document.getElementById('navonmesa-popup');
+    const closeButton = document.querySelector('.close-button');
+    setTimeout(() => {
+      popup.classList.remove('hidden');
+      popup.classList.add('show-popup');
+    }, 3000);
+    closeButton.addEventListener('click', () => {
+      popup.classList.add('hidden');
+    });
+  });

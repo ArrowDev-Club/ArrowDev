@@ -1107,3 +1107,100 @@ body{
 
     
   } 
+
+
+/* Navonmesa Popup */
+
+.popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 350px;
+  background: linear-gradient(135deg, #f4d03f, #16a085);
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+  animation: fadeIn 1s ease-in-out, glow 2s infinite alternate;
+  transform-origin: bottom right;
+  z-index: 100000;
+}
+.popup.hidden {
+  display: none;
+}
+.popup-content {
+  padding: 25px;
+  color: #fff;
+  text-align: center;
+  font-family: 'Mokoto', sans-serif;
+}
+.popup-content h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  animation: slideIn 1s ease-in-out;
+}
+.popup-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.join-button {
+  background: #fff;
+  color: #000;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  animation: bounce 2s infinite;
+}
+.close-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: background 0.3s, transform 0.3s;
+}
+.close-button:hover {
+  background: rgba(255,255,255,0.2);
+  transform: rotate(90deg) scale(1.2);
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+@keyframes glow {
+  from { box-shadow: 0 0 10px #16a085; }
+  to { box-shadow: 0 0 30px #f4d03f; }
+}
+@media (max-width: 500px) {
+  .popup {
+    width: 90%;
+    right: 10px;
+    bottom: 10px;
+  }
+  .popup-content h2 {
+    font-size: 20px;
+  }
+  .popup-content p {
+    font-size: 14px;
+  }
+  .join-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
