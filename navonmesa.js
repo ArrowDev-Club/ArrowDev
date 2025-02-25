@@ -250,15 +250,15 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="preview-details">
                         <div class="detail-item">
                             <i class="fas fa-calendar"></i>
-                            <span>Date: January 25, 2025</span>
+                            <span>Date: ${this.querySelector('.event-details') ? 
+                                this.querySelector('.event-details').innerHTML.split('<br>')[0].replace('<strong>📅 Date:</strong> ', '') : 
+                                'March 3, 2025'}</span>
                         </div>
                         <div class="detail-item">
-                            <i class="fas fa-clock"></i>
-                            <span>Duration: 2 Hours</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fas fa-trophy"></i>
-                            <span>Prizes Worth: ₹10,000</span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Venue: ${this.querySelector('.event-details') ? 
+                                this.querySelector('.event-details').innerHTML.split('<br>')[1].replace('<strong>📍 Venue:</strong> ', '') : 
+                                'SRMIST Vadapalani'}</span>
                         </div>
                     </div>
                     <button class="register-btn">Register Now</button>
