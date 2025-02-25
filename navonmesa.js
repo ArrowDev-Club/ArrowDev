@@ -261,7 +261,6 @@ document.addEventListener('DOMContentLoaded', function() {
                                 'SRMIST Vadapalani'}</span>
                         </div>
                     </div>
-                    <button class="register-btn">Register Now</button>
                 </div>
             `;
             
@@ -318,47 +317,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Mobile Tab System
     if (window.innerWidth <= 768) {
+        // Remove tab functionality since we're showing all sections
         const tabBtns = document.querySelectorAll('.tab-btn');
-        const tabPanes = document.querySelectorAll('.tab-pane');
-
         tabBtns.forEach(btn => {
-            btn.addEventListener('click', function() {
-                tabBtns.forEach(b => b.classList.remove('active'));
-                tabPanes.forEach(p => p.classList.remove('active'));
+            btn.style.display = 'none'; // Hide the tab buttons
+        });
 
-                btn.classList.add('active');
-                const tabId = btn.dataset.tab;
-                document.getElementById(tabId).classList.add('active');
+        // Ensure register buttons work in mobile view
+        document.querySelectorAll('.register-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation(); // Prevent event card click
+                if (this.hasAttribute('onclick')) {
+                    const href = this.getAttribute('onclick').match(/'([^']+)'/)[1];
+                    window.location.href = href;
+                }
             });
         });
-
-        // Add touch swipe functionality for mobile tabs
-        let touchStartX = 0;
-        let touchEndX = 0;
-        
-        const eventsContainer = document.querySelector('.events-container');
-        
-        eventsContainer.addEventListener('touchstart', e => {
-            touchStartX = e.changedTouches[0].screenX;
-        });
-
-        eventsContainer.addEventListener('touchend', e => {
-            touchEndX = e.changedTouches[0].screenX;
-            handleSwipe();
-        });
-
-        function handleSwipe() {
-            const currentTab = document.querySelector('.tab-btn.active');
-            const tabs = Array.from(tabBtns);
-            const currentIndex = tabs.indexOf(currentTab);
-
-            if (touchEndX < touchStartX && currentIndex < tabs.length - 1) {
-                // Swipe left
-                tabs[currentIndex + 1].click();
-            } else if (touchEndX > touchStartX && currentIndex > 0) {
-                // Swipe right
-                tabs[currentIndex - 1].click();
-            }
-        }
     }
 }); 
