@@ -40,7 +40,7 @@
         window.open("https://www.linkedin.com/in/rajavel-m-b47a97209/");
     }
     document.getElementById("dhiyanesh").onclick=function(){
-        window.open("https://www.linkedin.com/in/dr-dhiyanesh-balasubramaniyan-85098937/");
+        window.open("https://www.linkedin.com/in/theresa-cenate-9b62a5107/");
     }
     let captions=document.getElementsByClassName("captions");
     function type(i,ele,char,timer){
@@ -235,6 +235,7 @@
     
 
 })();
+
 
 
 
